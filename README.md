@@ -27,9 +27,19 @@
 
 <a class="projects"></a>
 
-### Stage 02 - Móveis Customizados I
+### Stage 02 -
+
+#### Móveis Customizados:
 
 <img alt="header" src="https://github.com/DaianedaRosa/ExploreFullStack_Rocketseat/assets/93106370/f5be7cf1-2282-486f-824f-678a3ec700d3">
+
+#### Treinos exclusivos:
+
+![projeto02](https://github.com/DaianedaRosa/ExploreFullStack_Rocketseat/assets/93106370/f70b3416-5421-4cbb-9ba1-2bceb62e2042)
+
+#### Desafio avançado: 
+
+![desafio](https://github.com/DaianedaRosa/ExploreFullStack_Rocketseat/assets/93106370/26850306-d2af-46d5-8124-60d2dab39189)
 
 
 
