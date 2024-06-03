@@ -18,7 +18,7 @@
       <header>
         <div class="header">
           <h1>Avalie sua mentoria</h1>
-          <p id="legend">Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+          <p class="legend-header">Chegou a hora de avaliar o seu mentor. Bora lá?</p>
         </div>
 
         <div class="image">  
@@ -31,11 +31,11 @@
 
       <form id="my-form">
         <fieldset>
-
           <div class="fieldset">
-            <legend>Informações pessoais</legend>
+            <div class="legend-form">
+              <legend class="legend-fieldset">Informações pessoais</legend>
+            </div>
 
-            <div class="content-form">
               <div class="part-name">
                 <div class="input">
                   <label for="event-name">Nome</label>
@@ -52,11 +52,126 @@
                 <label for="event-email">Email <span>(digite um email válido)</span></label>
                 <input type="email" id="event-email" />
               </div>
-  
-            </div>
-           
+
+              <h2>Informações do mentor</h2>
+
+              <div class="border"></div>
+              
+              <div class="event-teacher">
+                <div class="input">
+                  <label for="event-category">Selecione quem foi o seu mentor</label>
+                  <select id="event-category">
+                    <option value="live"></option>
+                    <option value="live">Maik</option>
+                    <option value="podcast">Rafaella</option>
+                    <option value="mentorship">João</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="input-feedback">
+                <label for="event-feedback">Feedback sobre o mentor</label>
+                <textarea id="event-feedback"></textarea>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="event-duvidas" />
+                <label for="event-duvidas">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+              </div>
+          
           </div>
         </fieldset>
+
+        <fieldset>
+          <div class="fieldset">
+              <legend class="final-caption">Agendando próxima mentoria</legend>
+
+              <div class="border"></div>
+
+              <div class="col-3">
+
+                  <div class="input-date" id="date">
+                      <label for="event-date">Data</label>
+                      <input type="date" id="event-date"/>
+                  </div>
+
+                  <div class="hours">
+                    <div class="input-date">
+                      <label for="event-time">Das</label>
+                      <input type="time" id="event-time" />
+                  </div>
+
+                  <div class="input-date">
+                      <label for="event-time">Até</label>
+                      <input type="time" id="event-time" />
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+             <!-- Incluindo Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Incluindo Tradução para Português Brasileiro -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr("#event-date", {
+                dateFormat: "d-m-Y", // Formato de data brasileiro
+                locale: "pt", // Configurando idioma para português
+                onOpen: function(selectedDates, dateStr, instance) {
+                    instance.input.placeholder = ""; // Remove o placeholder ao abrir o calendário
+                },
+                onClose: function(selectedDates, dateStr, instance) {
+                    if (!dateStr) {
+                        instance.input.placeholder = "Selecione a data"; // Adiciona o placeholder novamente se não houver data selecionada
+                    }
+                }
+            });
+
+            flatpickr("#event-time", {
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: "H:i",
+                time_24hr: true,
+                locale: "pt", // Configurando idioma para português
+                onOpen: function(selectedDates, dateStr, instance) {
+                    instance.input.placeholder = ""; // Remove o placeholder ao abrir o calendário
+                },
+                onClose: function(selectedDates, dateStr, instance) {
+                    if (!dateStr) {
+                        instance.input.placeholder = "Selecione o horário"; // Adiciona o placeholder novamente se não houver data selecionada
+                    }
+                }
+            });
+
+            flatpickr("#event-time", {
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: "H:i",
+                time_24hr: true,
+                locale: "pt", // Configurando idioma para português
+                onOpen: function(selectedDates, dateStr, instance) {
+                    instance.input.placeholder = ""; // Remove o placeholder ao abrir o calendário
+                },
+                onClose: function(selectedDates, dateStr, instance) {
+                    if (!dateStr) {
+                        instance.input.placeholder = "Selecione o horário"; // Adiciona o placeholder novamente se não houver data selecionada
+                    }
+                }
+            });
+        });
+    </script>
+      </fieldset>
+
+      <footer>
+        <button
+        class="button" 
+        type="submit"
+        form="my-form">
+        Salvar
+      </button>
+      </footer>
+        
       </form>
     </div>
   </body>
