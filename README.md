@@ -22,12 +22,14 @@
 <img alt="header" src="https://github.com/DaianedaRosa/ExploreFullStack_Rocketseat/assets/93106370/0fcf457b-61d2-4270-ac26-2cfc748f598a">
 
 ---
+<h1 align="center">
+  ## 👾 Projetos
+</h1>
 
-## 👾 Projetos
 
 <a class="projects"></a>
 
-### Stage 02 -
+### Stage 02 - Introdução ao HTML & CSS
 
 #### Móveis Customizados:
 
@@ -37,10 +39,15 @@
 
 ![projeto02](https://github.com/DaianedaRosa/ExploreFullStack_Rocketseat/assets/93106370/f70b3416-5421-4cbb-9ba1-2bceb62e2042)
 
-#### Desafio avançado: 
+#### Desafio avançado Stage 02: 
 
 ![desafio](https://github.com/DaianedaRosa/ExploreFullStack_Rocketseat/assets/93106370/26850306-d2af-46d5-8124-60d2dab39189)
 
+### Stage 03 - Avançando no HTML & CSS
+
+#### Desafio avançado Stage 03:
+
+![desafioAvancado](https://github.com/DaianedaRosa/ExploreFullStack_Rocketseat/assets/93106370/5c50f727-7e3d-4be4-9229-5029e5986b66)
 
 
 
